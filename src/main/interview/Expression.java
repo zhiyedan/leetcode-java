@@ -62,7 +62,6 @@ public class Expression {
             sb.append(stack.pop());
         }
         return sb.toString();
-
     }
 
 
@@ -102,8 +101,10 @@ public class Expression {
         String former = "-*+3456";
         String post = "34+5*6-";
         String mid = "(3+4)*5-6";
+        String aaa = "(3+4)*5-(6+8)/2";
         Expression e = new Expression();
-        System.out.println(e.transToFormer(mid));
-//        System.out.println(e.postExpression(post));
+//        System.out.println(e.transToFormer(aaa));
+        System.out.println(e.postExpression("34+5*68+2/-"));
+        System.out.println(e.formorExpression("-*+345/+682"));
     }
 }
