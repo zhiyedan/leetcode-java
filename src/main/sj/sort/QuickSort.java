@@ -11,7 +11,7 @@ import java.util.Stack;
  */
 public class QuickSort {
     public void sort(int[] nums){
-        quickSort(nums,0,nums.length-1);
+        quickSortDec(nums,0,nums.length-1);
     }
 
     private void quickSort(int[] nums, int left, int right) {
@@ -28,6 +28,29 @@ public class QuickSort {
                 left++;
             nums[right] = nums[left];
             while (right>left && nums[right]>=pk)
+                right--;
+            nums[left] = nums[right];
+        }
+        nums[right] = pk;
+        return right;
+    }
+
+    private void quickSortDec(int[] nums, int left, int right) {
+        if(left >= right) return;
+        int mid = partition(nums,left,right);
+        quickSortDec(nums,left,mid-1);
+        quickSortDec(nums,mid+1,right);
+    }
+
+    // 递减
+    public int partition(int[] nums, int left, int right) {
+        if (left >= right) return left;
+        int pk = nums[right];
+        while (left < right) {
+            while (left < right && nums[left] >= pk)
+                left++;
+            nums[right] = nums[left];
+            while (right > left && nums[right] <= pk)
                 right--;
             nums[left] = nums[right];
         }
@@ -62,7 +85,7 @@ public class QuickSort {
     public static void main(String[] args) {
         QuickSort a = new QuickSort();
         int[] array = new int[]{3,1,2,3,23,11,20};
-        a.sort2(array);
+        a.sort(array);
         System.out.println(Arrays.toString(array));
     }
 }

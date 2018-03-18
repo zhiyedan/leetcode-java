@@ -8,18 +8,18 @@ package sj.sort;
 public class QuickSelect {
 
     public int solution(int[] nums, int k) {
-        if (k >= nums.length) return -1;
-        return quickSort(nums,k,0,nums.length-1);
+        if (k > nums.length) return -1;
+        return quickSort(nums, k, 0, nums.length - 1);
     }
 
     public int quickSort(int[] nums, int k, int left, int right) {
         if (left == right) return nums[left];
-        int mid = partition(nums,left,right);
-        if(mid == k-1) return nums[k-1];
-        if(mid > k-1){
-            return quickSort(nums,k,left,mid-1);
-        }else {
-            return quickSort(nums,k,mid+1,right);
+        int mid = partition(nums, left, right);
+        if (mid == k - 1) return nums[k - 1];
+        if (mid > k - 1) {
+            return quickSort(nums, k, left, mid - 1);
+        } else {
+            return quickSort(nums, k, mid + 1, right);
         }
 
     }
@@ -41,6 +41,9 @@ public class QuickSelect {
 
     public static void main(String[] args) {
         QuickSelect select = new QuickSelect();
-        System.out.println(select.solution(new int[]{2,1,5,13,5,10,37},3));
+        int[] array = new int[]{2, 1, 5, 133, 13, 10, 37};
+        for (int i = 1; i <= array.length; i++ ){
+            System.out.println(select.solution(array,i));
+        }
     }
 }
