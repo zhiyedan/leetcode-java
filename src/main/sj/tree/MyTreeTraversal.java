@@ -60,17 +60,17 @@ public class MyTreeTraversal {
     }
 
     // 逆序层次遍历
-    public List<List<TreeNode>> reverseLevelTraverse(TreeNode root){
-        List<List<TreeNode>> result = new ArrayList<>();
+    public List<List<Integer>> reverseLevelTraverse(TreeNode root){
+        List<List<Integer>> result = new ArrayList<>();
         Queue<TreeNode> queue = new LinkedList<>();
         if(root == null) return result;
         queue.offer(root);
-        while (queue != null){
+        while (!queue.isEmpty()){
             int size = queue.size();
-            List<TreeNode> list = new ArrayList<>();
+            List<Integer> list = new ArrayList<>();
             for(int i=0;i<size;i++){
                 TreeNode node = queue.poll();
-                list.add(node);
+                list.add(node.val);
                 if(node.right != null) queue.offer(node.right);
                 if(node.left != null) queue.offer(node.left);
             }
