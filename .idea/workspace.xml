@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e22ea7d4-26c7-4182-91dd-57bc882599b7" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/sj/tree/NReConstructBinaryTree.java" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/sj/tree/NReConstructBinaryTree.java" afterPath="$PROJECT_DIR$/src/main/sj/tree/NReConstructBinaryTree.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -18,8 +19,8 @@
       <file leaf-file-name="NReConstructBinaryTree.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/sj/tree/NReConstructBinaryTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="3" column="24" lean-forward="false" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+            <state relative-caret-position="205">
+              <caret line="11" column="34" lean-forward="true" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -591,7 +592,7 @@
       <workItem from="1521183016903" duration="15912000" />
       <workItem from="1521217095752" duration="1672000" />
       <workItem from="1521372243912" duration="4295000" />
-      <workItem from="1521776950057" duration="873000" />
+      <workItem from="1521776950057" duration="1046000" />
     </task>
     <task id="LOCAL-00001" summary="暴力枚举">
       <created>1521034784023</created>
@@ -632,7 +633,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="217259000" />
+    <option name="totallyTimeSpent" value="217432000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1005,8 +1006,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/sj/tree/NReConstructBinaryTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" column="24" lean-forward="false" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+        <state relative-caret-position="205">
+          <caret line="11" column="34" lean-forward="true" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
           <folding />
         </state>
       </provider>
