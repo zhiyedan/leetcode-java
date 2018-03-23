@@ -23,6 +23,7 @@ public class L107LevelOrderBottom {
             List<Integer> list = new ArrayList<>();
             int size = queue.size();
             for(int i=0;i<size;i++){
+                //todo 不是push 。。。。
                 TreeNode node = queue.poll();
                 list.add(node.val);
                 if(node.left != null) queue.offer(node.left);
