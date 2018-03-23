@@ -8,6 +8,8 @@ public class NReConstructBinaryTree {
         int preR=pre.length-1, inR=in.length-1;
         return build(pre,preL,preR,in,inL,inR);
     }
+
+    //todo 最重要的是区间的选择！！ pre先序的左右区间
     private TreeNode build(int [] pre,int preL,int preR,int [] in,int inL,int inR){
         if(preL>preR || inL > inR) return null;
         TreeNode root = new TreeNode(pre[preL]);
