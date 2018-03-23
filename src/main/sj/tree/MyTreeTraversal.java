@@ -58,6 +58,32 @@ public class MyTreeTraversal {
         }
         return result;
     }
+    // todo 非递归后序遍历
+    public void postTraver(TreeNode root){
+        Stack<TreeNode> stack1 = new Stack<>();
+        Stack<Integer> stack2 = new Stack<>();
+
+        while (root != null || !stack1.isEmpty()){
+            // 压left node
+            while (root != null){
+                stack1.push(root);
+                stack2.push(0);
+                root = root.left;
+            }
+            // 这个时候root为null，所以要弹栈
+            // 如果是第二次访问，则输出
+            while (!stack1.isEmpty() && stack2.peek() == 1){
+                System.out.println(stack1.pop().val);
+                stack2.pop();
+            }
+            // 如果是第一次访问，则遍历其右节点
+            if (!stack1.isEmpty() ){
+                stack2.pop();
+                stack2.push(1);
+                root = stack1.peek().right;
+            }
+        }
+    }
 
     // 逆序层次遍历
     public List<List<Integer>> reverseLevelTraverse(TreeNode root){
