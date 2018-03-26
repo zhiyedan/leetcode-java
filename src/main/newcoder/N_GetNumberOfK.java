@@ -61,6 +61,6 @@ public class N_GetNumberOfK {
     }
 
     public static void main(String[] args) {
-        System.out.println(getEndIndex(new int[]{1, 2, 2, 2, 3}, 2));
+        System.out.println(getEndIndex(new int[]{1, 2, 2, 2, 3,3,9}, 4));
     }
 }
