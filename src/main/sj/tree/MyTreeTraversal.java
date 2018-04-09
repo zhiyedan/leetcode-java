@@ -45,6 +45,33 @@ public class MyTreeTraversal {
         return list;
     }
 
+    // todo 非递归后序遍历
+
+    public void postTraver(TreeNode root){
+        Stack<TreeNode> stack1 = new Stack<>();
+        Stack<Integer> stack2 = new Stack<>();
+
+        while (root != null || !stack1.isEmpty()){
+            // 压left node
+            while (root != null){
+                stack1.push(root);
+                stack2.push(0);
+                root = root.left;
+            }
+            // 这个时候root为null，所以要弹栈
+            // 如果是第二次访问，则输出
+            while (!stack1.isEmpty() && stack2.peek() == 1){
+                System.out.println(stack1.pop().val);
+                stack2.pop();
+            }
+            // 如果是第一次访问，则遍历其右节点
+            if (!stack1.isEmpty() && stack2.peek()==0){
+                stack2.pop();
+                stack2.push(1);
+                root = stack1.peek().right;
+            }
+        }
+    }
     //TODO 非递归后序遍历树 left-right - root 无耻的想法：root-right-left,然后倒着插入
     public List<Integer> postOrder(TreeNode root) {
         List<Integer> result = new ArrayList<>();
@@ -82,7 +109,7 @@ public class MyTreeTraversal {
     public static void main(String[] args) {
         MyTreeTraversal a = new MyTreeTraversal();
         TreeNode root = TreeNode.getBiTree();
-
+        a.postTraver(root);
     }
 
 
