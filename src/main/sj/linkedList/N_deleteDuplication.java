@@ -23,11 +23,37 @@ public class N_deleteDuplication {
                 pre = cur;
                 cur =cur.next;
             }else {
-                //pre不变，删除重复节点
+                //pre不变，删除重复节点 todo 只链接不移动
                 pre.next = cur.next;
                 cur = cur.next;
             }
         }
         return newHead.next;
+    }
+
+    public ListNode de2(ListNode pHead){
+        ListNode newNode = new ListNode(-1);
+        ListNode preNode = newNode;
+        ListNode curNode = pHead;
+        while (curNode != null){
+            boolean isDuplicated = false;
+            while (curNode.next!=null && curNode.next.val == curNode.val) {
+                curNode = curNode.next;
+                isDuplicated = true;
+            }
+            preNode.next = (isDuplicated)?curNode.next:curNode;
+            //todo key point：如果重复，pre是不需要移动的，否则会陷入死循环。
+            preNode = (isDuplicated)?preNode:preNode.next;
+            curNode = curNode.next;
+        }
+        return newNode.next;
+    }
+
+    public static void main(String[] args) {
+        N_deleteDuplication a = new N_deleteDuplication();
+        ListNode head = ListNode.genList();
+        ListNode.showList(head);
+        ListNode result = a.de2(head);
+        ListNode.showList(result);
     }
 }

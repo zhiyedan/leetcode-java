@@ -1,4 +1,4 @@
-package sj.DP;
+package main.sj.DP;
 
 import java.util.ArrayList;
 import java.util.Collections;
