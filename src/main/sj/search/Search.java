@@ -17,7 +17,7 @@ public class Search {
         else return binFun(array,target,begin,mid-1);
     }
     //TODO 非递归，如果没有，返回应该有的位置，相当于找起点
-    public int unRecursive(int[] array, int target){
+    public static int unRecursive(int[] array, int target){
         int low = 0;
         //TODO 注意high本身靠右，所以mid也是偏右的。
         int high = array.length;

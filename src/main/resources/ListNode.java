@@ -14,7 +14,7 @@ public class ListNode {
     public static ListNode genList(){
         ListNode node1 = new ListNode(1);
         ListNode node2 = new ListNode(5);
-        ListNode node3 = new ListNode(3);
+        ListNode node3 = new ListNode(5);
         ListNode node4 = new ListNode(6);
         ListNode node5 = new ListNode(2);
         node1.next = node2;
@@ -30,5 +30,6 @@ public class ListNode {
             System.out.print(head.val+tail);
             head = head.next;
         }
+        System.out.println();
     }
 }

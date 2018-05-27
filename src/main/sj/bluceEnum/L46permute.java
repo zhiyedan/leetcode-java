@@ -74,7 +74,7 @@ public class L46permute {
     public void backtrack(List<List<Integer>> result,List<Integer> tempList,int[] nums){
         if(tempList.size() == nums.length){
             //TODO 这样写返回的都为空，因为只有一个实例对象
-            result.add(tempList);
+            result.add(new ArrayList<>(tempList));
             return;
         }
         for(int i=0; i< nums.length; i++){
