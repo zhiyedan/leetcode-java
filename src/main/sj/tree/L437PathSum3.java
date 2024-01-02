@@ -1,6 +1,6 @@
 package sj.tree;
 
-import resources.TreeNode;
+import common.TreeNode;
 
 import java.util.HashMap;
 import java.util.Map;

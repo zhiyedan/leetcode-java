@@ -1,6 +1,6 @@
 package sj.sort;
 
-import resources.ListNode;
+import common.ListNode;
 
 /**
  * Created by steven on 18-2-26 下午11:46

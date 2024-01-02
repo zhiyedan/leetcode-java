@@ -1,6 +1,6 @@
 package sj.array;
 
-import resources.Util;
+import common.Util;
 
 /**
  * Created by steven on 18-3-23 下午7:24

@@ -1,6 +1,6 @@
 package sj.linkedList;
 
-import resources.TreeNode;
+import common.TreeNode;
 
 /**
  * Created by steven on 18-3-24 上午11:24

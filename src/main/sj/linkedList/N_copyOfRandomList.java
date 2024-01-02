@@ -1,6 +1,6 @@
 package sj.linkedList;
 
-import resources.RandomListNode;
+import common.RandomListNode;
 
 import java.util.HashMap;
 

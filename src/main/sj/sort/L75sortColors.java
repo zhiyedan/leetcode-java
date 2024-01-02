@@ -1,9 +1,6 @@
 package sj.sort;
 
-import resources.Util;
-
-import java.util.Arrays;
-import java.util.Collections;
+import common.Util;
 
 /**
  * Created by steven on 18-3-1 下午8:09

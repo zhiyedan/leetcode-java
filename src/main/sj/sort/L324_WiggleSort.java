@@ -1,6 +1,6 @@
 package sj.sort;
 
-import resources.Util;
+import common.Util;
 
 import java.util.Arrays;
 

@@ -1,8 +1,6 @@
 package sj.tree;
 
-import resources.TreeNode;
-import sun.reflect.generics.tree.Tree;
-
+import common.TreeNode;
 import java.util.*;
 
 /**
@@ -47,7 +45,7 @@ public class MyTreeTraversal {
 
     // todo 非递归后序遍历
 
-    public void postTraver(TreeNode root){
+    public void postTraver1(TreeNode root){
         Stack<TreeNode> stack1 = new Stack<>();
         Stack<Integer> stack2 = new Stack<>();
 

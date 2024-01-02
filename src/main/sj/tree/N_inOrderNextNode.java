@@ -1,6 +1,6 @@
 package sj.tree;
 
-import resources.TreeLinkNode;
+import common.TreeLinkNode;
 
 /**
  * Created by steven on 18-3-30 上午12:56

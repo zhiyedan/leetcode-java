@@ -1,6 +1,6 @@
 package newcoder;
 
-import resources.TreeLinkNode;
+import common.TreeLinkNode;
 
 /**
  * Created by steven on 18-3-29 下午9:39

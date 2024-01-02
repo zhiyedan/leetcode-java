@@ -1,6 +1,6 @@
 package newcoder;
 
-import resources.Util;
+import common.Util;
 
 /**
  * Created by steven on 18-3-29 下午3:43

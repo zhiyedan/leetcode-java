@@ -1,6 +1,6 @@
 package newcoder;
 
-import resources.ListNode;
+import common.ListNode;
 
 /**
  * Created by steven on 18-3-27 下午5:34

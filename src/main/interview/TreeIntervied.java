@@ -1,6 +1,6 @@
 package interview;
 
-import resources.TreeNode;
+import common.TreeNode;
 import sj.tree.MyTreeTraversal;
 
 import java.util.ArrayList;

@@ -1,7 +1,6 @@
 package sj.tree;
 
-import com.sun.xml.internal.bind.v2.TODO;
-import resources.TreeNode;
+import common.TreeNode;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

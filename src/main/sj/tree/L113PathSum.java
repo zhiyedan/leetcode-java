@@ -1,7 +1,6 @@
 package sj.tree;
 
-import resources.TreeNode;
-import sun.reflect.generics.tree.Tree;
+import common.TreeNode;
 
 import java.util.ArrayList;
 import java.util.List;

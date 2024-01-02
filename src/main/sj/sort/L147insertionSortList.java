@@ -1,10 +1,6 @@
 package sj.sort;
 
-import resources.ListNode;
-
-import java.awt.*;
-import java.util.List;
-import java.util.Stack;
+import common.ListNode;
 
 /**
  * Created by steven on 18-2-25 下午7:52

@@ -1,6 +1,6 @@
 package sj.tree;
 
-import resources.TreeLinkNode;
+import common.TreeLinkNode;
 
 import java.util.LinkedList;
 import java.util.Queue;

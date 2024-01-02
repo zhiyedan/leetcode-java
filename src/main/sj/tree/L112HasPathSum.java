@@ -1,8 +1,6 @@
 package sj.tree;
 
-import resources.TreeNode;
-
-import java.util.Stack;
+import common.TreeNode;
 
 /**
  * Created by steven on 18-2-13 下午7:38

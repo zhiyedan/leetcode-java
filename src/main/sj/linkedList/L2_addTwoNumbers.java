@@ -1,6 +1,6 @@
 package sj.linkedList;
 
-import resources.ListNode;
+import common.ListNode;
 
 /**
  * Created by steven on 18-3-28 下午7:55

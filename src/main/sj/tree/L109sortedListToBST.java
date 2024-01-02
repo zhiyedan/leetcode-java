@@ -1,7 +1,7 @@
 package sj.tree;
 
-import resources.ListNode;
-import resources.TreeNode;
+import common.ListNode;
+import common.TreeNode;
 
 /**
  * Created by steven on 18-2-24 下午9:53

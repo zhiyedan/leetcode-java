@@ -1,7 +1,6 @@
 package sj.tree;
 
-import resources.TreeNode;
-import sun.reflect.generics.tree.Tree;
+import common.TreeNode;
 
 /**
  * Created by steven on 18-2-8 下午11:15

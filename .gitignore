@@ -1,0 +1,21 @@
+# 忽略编译生成的文件和目录
+target/
+*/target/
+
+# 忽略IDE和编辑器生成的文件
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# 忽略编译产生的class文件
+*.class
+
+# 忽略maven的一些配置文件和生成的目录
+maven-wrapper.jar
+.mvn/
+mvnw
+mvnw.cmd
+
+# 忽略日志文件
+*.log

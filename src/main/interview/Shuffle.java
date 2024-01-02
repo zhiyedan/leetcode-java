@@ -1,6 +1,6 @@
 package interview;
 
-import resources.MyUtil;
+import common.MyUtil;
 
 import java.util.Arrays;
 import java.util.Random;

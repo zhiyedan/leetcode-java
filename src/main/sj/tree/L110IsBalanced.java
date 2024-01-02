@@ -1,9 +1,6 @@
 package sj.tree;
 
-import resources.TreeNode;
-
-import java.util.HashMap;
-import java.util.HashSet;
+import common.TreeNode;
 
 /**
  * Created by steven on 18-2-21 上午9:22
