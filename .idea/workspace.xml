@@ -4,18 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e22ea7d4-26c7-4182-91dd-57bc882599b7" name="Default" comment="回归">
-      <change afterPath="$PROJECT_DIR$/src/main/sj/DP/ClimbStairs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/sj/DP/ClimbStairsWithCost.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/sj/DP/L343IntegerBreak.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/sj/DP/L63PathWithObstacles.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/sj/DP/bag/L1049LastStoneWeightII.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/sj/DP/bag/L416CanPartition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/sj/DP/bag/L474FindMaxForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/sj/DP/bag/L494FindTargetSumWays.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/sj/DP/bag/OriginBag.java" afterDir="false" />
+    <list default="true" id="e22ea7d4-26c7-4182-91dd-57bc882599b7" name="Default" comment="抢劫">
+      <change afterPath="$PROJECT_DIR$/src/main/sj/DP/L121StockSell.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/sj/DP/L123StockShell3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/sj/DP/L198Rob.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/sj/DP/L213Rob2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/sj/DP/L309StockSell4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/sj/DP/L337Rob3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/sj/DP/L714StockSell5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/sj/DP/bag/L139WordBreak.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/sj/DP/bag/L279NumSquares.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/sj/DP/bag/L322CoinChange.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/sj/DP/L96NumTrees.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/sj/DP/L96NumTrees.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/common/TreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/common/TreeNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/sj/DP/ClimbStairs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/sj/DP/ClimbStairs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/sj/DP/L121_stockSell.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/sj/DP/L122_stockSell2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/sj/DP/L122StockSell2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/sj/DP/L123_stockSell3.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -451,6 +456,9 @@
     "settings.editor.selected.configurable": "preferences.lookFeel",
     "应用程序.ClimbStairs.executor": "Run",
     "应用程序.ClimbStairsWithCost.executor": "Run",
+    "应用程序.L139WordBreak.executor": "Run",
+    "应用程序.L213Rob2.executor": "Run",
+    "应用程序.L322CoinChange.executor": "Run",
     "应用程序.L343IntegerBreak.executor": "Run",
     "应用程序.L474FindMaxForm.executor": "Run",
     "应用程序.OriginBag.executor": "Run"
@@ -461,7 +469,7 @@
       <recent name="$PROJECT_DIR$/src/main/common" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.OriginBag">
+  <component name="RunManager" selected="应用程序.L213Rob2">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
@@ -474,8 +482,22 @@
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
-    <configuration name="ClimbStairs" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="sj.DP.ClimbStairs" />
+    <configuration name="L139WordBreak" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sj.DP.bag.L139WordBreak" />
+      <module name="leetcode" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sj.DP.bag.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="L213Rob2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sj.DP.L213Rob2" />
       <module name="leetcode" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -488,27 +510,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ClimbStairsWithCost" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="sj.DP.ClimbStairsWithCost" />
+    <configuration name="L322CoinChange" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sj.DP.bag.L322CoinChange" />
       <module name="leetcode" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="sj.DP.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="L343IntegerBreak" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="sj.DP.L343IntegerBreak" />
-      <module name="leetcode" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="sj.DP.*" />
+          <option name="PATTERN" value="sj.DP.bag.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -567,19 +575,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="应用程序.L343IntegerBreak" />
+      <item itemvalue="应用程序.L139WordBreak" />
+      <item itemvalue="应用程序.L213Rob2" />
+      <item itemvalue="应用程序.L322CoinChange" />
       <item itemvalue="应用程序.L474FindMaxForm" />
       <item itemvalue="应用程序.OriginBag" />
-      <item itemvalue="应用程序.ClimbStairs" />
-      <item itemvalue="应用程序.ClimbStairsWithCost" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.L213Rob2" />
+        <item itemvalue="应用程序.L139WordBreak" />
+        <item itemvalue="应用程序.L322CoinChange" />
         <item itemvalue="应用程序.OriginBag" />
         <item itemvalue="应用程序.L474FindMaxForm" />
-        <item itemvalue="应用程序.L343IntegerBreak" />
-        <item itemvalue="应用程序.ClimbStairsWithCost" />
-        <item itemvalue="应用程序.ClimbStairs" />
       </list>
     </recent_temporary>
   </component>
@@ -745,7 +753,23 @@
       <option name="project" value="LOCAL" />
       <updated>1704214484890</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="dp">
+      <option name="closed" value="true" />
+      <created>1708577265862</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1708577265862</updated>
+    </task>
+    <task id="LOCAL-00011" summary="完全背包">
+      <option name="closed" value="true" />
+      <created>1708616627936</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1708616627936</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -822,7 +846,10 @@
     <MESSAGE value="Merge pull request #5 from zhiyedan/y470&#10;&#10;Y470" />
     <MESSAGE value="newcoder 20" />
     <MESSAGE value="回归" />
-    <option name="LAST_COMMIT_MESSAGE" value="回归" />
+    <MESSAGE value="dp" />
+    <MESSAGE value="完全背包" />
+    <MESSAGE value="抢劫" />
+    <option name="LAST_COMMIT_MESSAGE" value="抢劫" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -861,6 +888,21 @@
           <url>file://$PROJECT_DIR$/src/main/sj/linkedList/N_deleteDuplication.java</url>
           <line>39</line>
           <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/sj/DP/bag/L322CoinChange.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/sj/DP/bag/L139WordBreak.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/sj/DP/L213Rob2.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="46" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

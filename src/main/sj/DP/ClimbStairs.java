@@ -33,6 +33,24 @@ public class ClimbStairs {
         return b;
     }
 
+    /**
+     * @param n 总台阶数
+     * @param m 一次最多可以跨越台阶数
+     * @return
+     */
+    public static int fun3(int n, int m) {
+        int[] dp = new int[n + 1];
+        dp[0] = 1;
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= m; j++) {
+                if(i >= j){
+                    dp[i] += dp[i-j];
+                }
+            }
+        }
+        return dp[n];
+    }
+
     public static void main(String[] args) {
         System.out.println(ClimbStairs.fun1(5));
         System.out.println(ClimbStairs.fun2(5));

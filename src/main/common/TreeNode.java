@@ -5,14 +5,26 @@ package common;
  * shijia0620@126.com
  */
 public class TreeNode {
+
     public int val;
     public TreeNode left;
     public TreeNode right;
 
+    public TreeNode() {
+    }
+
+
     public TreeNode(int x) {
         val = x;
     }
-    public static TreeNode getBiTree(){
+
+    public TreeNode(int val, TreeNode left, TreeNode right) {
+        this.val = val;
+        this.left = left;
+        this.right = right;
+    }
+
+    public static TreeNode getBiTree() {
         TreeNode root = new TreeNode(5);
         TreeNode root1 = new TreeNode(4);
         TreeNode root2 = new TreeNode(8);
