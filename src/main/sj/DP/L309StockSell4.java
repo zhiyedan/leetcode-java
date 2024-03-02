@@ -28,7 +28,7 @@ public class L309StockSell4 {
             int newSell = Math.max(sell, buy + prices[i]);
             int newBuy = Math.max(buy, cold - prices[i]);
             buy = newBuy;
-            sell = newShell;
+            sell = newSell;
             cold = newCold;
         }
 
