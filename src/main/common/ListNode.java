@@ -8,10 +8,15 @@ public class ListNode {
     public int val;
     public ListNode next;
 
+    public ListNode() {
+
+    }
+
     public ListNode(int x) {
         val = x;
     }
-    public static ListNode genList(){
+
+    public static ListNode genList() {
         ListNode node1 = new ListNode(1);
         ListNode node2 = new ListNode(5);
         ListNode node3 = new ListNode(5);
@@ -24,10 +29,11 @@ public class ListNode {
         node5.next = null;
         return node1;
     }
-    public static void showList(ListNode head){
-        while (head != null){
-            String tail = (head.next != null)?"->":"";
-            System.out.print(head.val+tail);
+
+    public static void showList(ListNode head) {
+        while (head != null) {
+            String tail = (head.next != null) ? "->" : "";
+            System.out.print(head.val + tail);
             head = head.next;
         }
         System.out.println();
