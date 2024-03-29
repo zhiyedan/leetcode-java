@@ -7,7 +7,7 @@ import common.ListNode;
  * 图示两个链表在节点 c1 开始相交：
  *
  */
-public class InserSectionNode {
+public class InserSectionNodeL160 {
     /**
      * 双指针，补齐差距，然后一一对比是否相同
      * @param headA

@@ -1,4 +1,4 @@
-package sj.stack;
+package sj.stack2queue;
 
 import java.util.*;
 
