@@ -8,24 +8,13 @@ import java.util.Queue;
 /**
  * Created by steven on 18-2-13 下午1:29
  * shijia0620@126.com
- *
+ * <p>
  * nvert a binary tree.
  */
 public class L226InvertTree {
-    public TreeNode invertTree(TreeNode root) {
-        if(root == null)
-            return null;
-        invertTree(root.left);
-        invertTree(root.right);
-        TreeNode temp = root.left;
-        root.left = root.right;
-        root.right = temp;
-        return root;
-    }
-    //上面解法没有用到递归的返回值
-//    TODO 本身来讲属于DFS
+
     public TreeNode invertTree2(TreeNode root) {
-        if(root == null)
+        if (root == null)
             return null;
         TreeNode leftNode = invertTree(root.left);
         TreeNode rightNode = invertTree(root.right);
@@ -33,18 +22,59 @@ public class L226InvertTree {
         root.right = leftNode;
         return root;
     }
-//    TODO： BFS 做法
-    public TreeNode bfsInvertTree(TreeNode root){
-        if(root == null) return null;
-        Queue<TreeNode> queue = new LinkedList<>();
+
+    /**
+     * BFS
+     *
+     * @param root
+     * @return
+     */
+    public TreeNode bfsInvertTree(TreeNode root) {
+
+        if (root == null) return root;
+        Deque<TreeNode> queue = new LinkedList<>();
         queue.offer(root);
-        while (!queue.isEmpty()){
-            TreeNode node = queue.poll();
-            TreeNode temp = node.left;
-            node.left = node.right;
-            node.right = temp;
-            if(node.left != null) queue.offer(node.left);
-            if(node.right != null) queue.offer(node.right);
+
+        while (!queue.isEmpty()) {
+            int size = queue.size();
+            for (int i = 0; i < size; i++) {
+
+                TreeNode cur = queue.poll();
+
+                TreeNode temp = cur.left;
+                cur.left = cur.right;
+                cur.right = temp;
+
+                if (cur.left != null) queue.offer(cur.left);
+                if (cur.right != null) queue.offer(cur.right);
+            }
+        }
+
+        return root;
+    }
+
+    /**
+     * dfs 迭代法 先序遍历
+     *
+     * @param root
+     * @return
+     */
+    public TreeNode invertTree(TreeNode root) {
+        if (root == null) return null;
+
+        Stack<TreeNode> stack = new Stack<>();
+        TreeNode cur = root;
+        while (cur != null || !stack.isEmpty()) {
+            if (cur != null) {
+                TreeNode tmp = cur.left;
+                cur.left = cur.right;
+                cur.right = tmp;
+                stack.push(cur);
+                cur = cur.left;
+            } else {
+                cur = stack.pop();
+                cur = cur.right;
+            }
         }
         return root;
     }

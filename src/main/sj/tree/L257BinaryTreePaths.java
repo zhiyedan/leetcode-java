@@ -30,4 +30,61 @@ public class L257BinaryTreePaths {
             helpFun(root.right, path + root.val + "->", list);
         }
     }
+
+
+    public List<String> binaryTreePaths2(TreeNode root) {
+
+        List<String> res = new ArrayList<>();
+        Deque<TreeNode> nodeList = new LinkedList<>();
+
+        fun(root,res, nodeList);
+
+        return res;
+    }
+
+    private void fun(TreeNode root, List<String> res, Deque<TreeNode> nodeList){
+
+        if(root == null) return;
+
+        nodeList.offer(root);
+
+        if(root.left == null && root.right == null){
+            //TODO 这里用到了java8流式编程
+            String path = nodeList.stream().map(node -> String.valueOf(node.val)).collect(Collectors.joining("->"));
+            res.add(path);
+
+        }else{
+            fun(root.left, res, nodeList);
+            fun(root.right, res, nodeList);
+        }
+
+        nodeList.remove(root);
+
+    }
+
+    /**
+     * python 版本
+     * class Solution:
+     *     def binaryTreePaths(self, root: Optional[TreeNode]) -> List[str]:
+     *         if not root:
+     *             return []
+     *         result = []
+     *         self.traversal(root, [], result)
+     *         return result
+     *
+     * def fun(self, res:List[str], node:TreeNode, path:List[int]) -> None:
+     *  if not node:
+     *      return
+     *
+     *  path.append(node.val)
+     *
+     *  if not node.left and not node.right:
+     *      res.append('->'.join(map(str,path)))
+     *  if node.left:
+     *      self.fun(res, node.left, path)
+     *  if node.right:
+     *      self.fun(res, node.right, path)
+     *
+     *  path.pop()
+     */
 }
